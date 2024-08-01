@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Task Tracker</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Task Tracker</h1>
+            <form id="task-form">
+                <input type="text" id="title" placeholder="Enter Task Details" required>
+                <input type="date" id="due-date" required>
+                <button onclick="alert('Task Added Successfully!!')" type="submit">
+                    <h4>Submit</h4>
+                </button>
+            </form>
+        </header>
+        <div id="lower">
+            <div>Your Tasks</div>
+            <div class="filter">
+                <label for="filter">Filter By: </label>
+                <select id="filter">
+                    <option value="all">All</option>
+                    <option value="10">Last 10 days</option>
+                    <option value="15">Last 15 days</option>
+                    <option value="30">Last 30 days</option>
+                    <option value="1">Today</option>
+                </select>
+            </div>
+        </div>
+        <div id="task-list"></div>
+    </div>
+    <script src="./scripts.js"></script>
+</body>
+
+</html>
